@@ -1,0 +1,2 @@
+dataset_name:  "HC18/preprocessed_sam_slice_foreground_crop640_640"
+data_shape: [640, 640]

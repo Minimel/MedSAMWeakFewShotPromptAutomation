@@ -1,0 +1,2 @@
+dataset_name:  "ACDC/preprocessed_sam_slice_minsize_nobgslice_crop256_256"
+data_shape: [256, 256]

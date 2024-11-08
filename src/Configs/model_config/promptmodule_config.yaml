@@ -1,0 +1,4 @@
+type: 'simple_module'
+args:
+  num_points: 1
+  num_center_channels: 128

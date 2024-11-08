@@ -1,0 +1,16 @@
+type: 'TightBoxPrior'
+weight: 0.0001
+start_epoch: 0
+kwargs:
+  idc: [1]
+  t: 5.0
+  d: 5 # width of box line
+  thres_prob: 0
+  penalty_type: 'log_barrier'
+  scheduler:
+    update_frequency: 1
+    multiplier: 1
+other_kwargs:
+  bounds_name: null
+  bounds_params: null
+  fn: null

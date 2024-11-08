@@ -1,0 +1,2 @@
+dataset_name:  "CAMUS_public/preprocessed_sam_slice_nobgslice_crop512_512"
+data_shape: [512, 512]

@@ -1,0 +1,4 @@
+name: null   # 'comet' for comet_ml, or null (for default tensorboard)
+api_key: <comet-api-key>   # If name is comet, this is required
+workspace: <comet-workspace-name>   # If name is comet, this is required
+project_name: null   # If name is comet, this is required

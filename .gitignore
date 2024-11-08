@@ -1,0 +1,16 @@
+# Results files
+*.ckpt
+metrics.json
+
+# Python caches
+__pycache__/
+*.pyc
+*checkpoint.ipynb
+
+# VS code specific
+.vscode/settings.json
+.vscode/launch.json
+
+# OS generated files #
+.DS_Store
+.DS_Store?

@@ -1,0 +1,7 @@
+model_name: "vit_b"
+sam_checkpoint: "/home/AR32500/net/models/medsam/medsam_vit_b.pth"
+image_size: 1024
+in_channels: 3
+out_channels: 2
+prompt_learner: 
+  type: null

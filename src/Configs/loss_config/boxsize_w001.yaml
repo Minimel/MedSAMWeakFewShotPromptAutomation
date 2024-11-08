@@ -1,0 +1,21 @@
+type: 'BoxSizePrior'
+weight: 0.01
+start_epoch: 0
+kwargs:
+  target_str: 'weak_label'
+  idc: [1]
+  t: 5.0
+  nd: 'wh'
+  thres_prob: 0
+  penalty_type: 'log_barrier'
+  scheduler:
+    update_frequency: 1
+    multiplier: 1
+other_kwargs:
+  bounds_name: 'BoxBounds'
+  bounds_params: 
+    margins: [0.50, 0.90]
+  fn: 'soft_size'
+  
+
+  

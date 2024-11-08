@@ -1,0 +1,3 @@
+prompt_type: ['box']
+args: 
+  perturbation_bound: [0, 1] # No perturbation
