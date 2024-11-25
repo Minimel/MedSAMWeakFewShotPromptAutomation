@@ -118,16 +118,15 @@ The code is located in the `src` folder.
 ### Bash script
 Experiments can be run with:
 ```
-$ bash src/Bash_scripts/run_experiments_<dataset-name>.sh <path-to-model-config> <class-id> <path-to-train-config> <gpu-idx>
+$ bash src/Bash_scripts/run_experiments.sh <path-to-dataset-config> <class-id> <num-samples> <gpu-idx> <optional-experiment-log-name> 
 ```
 
-ie: `bash bash src/Bash_scripts/run_experiments.sh model_config/medsam_module_config.yaml 1 train_config/train_config_100_0001.yaml 0`
-
+ie: `bash src/Bash_scripts/run_experiments.sh data_config/ACDC_256.yaml 1 0 0`
 
 Options:
-- `<dataset-name>`: ACDC, CAMUS or HC
-- `<path-to-model-config>`: All located in `Configs/model_config` folder. Path starting from `model_config`.
-- `<class-id>`: starting from 1 
+- `<path-to-dataset-config>`: `data_config/ACDC_256.yaml`, `data_config/CAMUS_512.yaml` or `data_config/HC_640.yaml`
+- `<class-id>`:  1 or 3 
+- `<num-samples>`:  0 (all) or 10 
 - `<gpu-idx>`: depending on server
 <br/> <br/>
 
@@ -166,5 +165,5 @@ Input of `main.py`:
 
 Most hyperparameters are set to the default value used to perform the experiments in our paper.
 
-The main file can be run directly - 
-ie: `python src/main.py --data_dir <my-data-dir> --output-dir <my-output-dir> --data_config data_config/data_config_ACDC_256.yaml --data__class_to_segment 1  --seed 0`
+The main file can be run directly 
+(ie: `python src/main.py --data_dir <my-data-dir> --output-dir <my-output-dir> --data_config data_config/ACDC_256.yaml --data__class_to_segment 1  --seed 0`)

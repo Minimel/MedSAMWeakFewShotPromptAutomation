@@ -138,9 +138,9 @@ if __name__ == "__main__":
 
     # These are config files located in src/Config
     parser.add_argument('--data_config',  type=str, 
-                        default='data_config/data_config_ACDC_256.yaml'
-                        #default='data_config/data_config_CAMUS_512.yaml'
-                        #default='data_config/data_config_HC_640.yaml'
+                        default='data_config/ACDC_256.yaml'
+                        #default='data_config/CAMUS_512.yaml'
+                        #default='data_config/HC_640.yaml'
                         )
     parser.add_argument('--sam_config', type=str, default='model_config/medsam_config.yaml')
     parser.add_argument('--module_config', type=str, default='model_config/promptmodule_config.yaml')
